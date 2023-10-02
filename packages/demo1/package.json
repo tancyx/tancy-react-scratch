@@ -1,0 +1,20 @@
+{
+  "name": "demo1",
+  "version": "1.0.0",
+  "description": "> TODO: description",
+  "author": "'tancy' <'tancy@github.com'>",
+  "homepage": "",
+  "license": "ISC",
+  "main": "src/index.tsx",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "test": "node ./__tests__/demo1.test.js",
+    "dev": "webpack serve --mode development"
+  }
+}

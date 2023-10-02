@@ -537,7 +537,7 @@ Referenced from: .\.eslintrc.js
     at ConfigArrayFactory._loadConfigData (.\node_modules\@eslint\eslintrc\dist\eslintrc.cjs:2975:42)
 ```
 
-原因：Eslint8 以后的版本官方修改了配置文件，都合并到 ```prettier``` 里面了。所以需要修改如下：
+原因：eslint-config-prettier 8 以后的版本官方修改了配置文件，都合并到 ```prettier``` 里面了。所以需要修改如下：
 
 ```js
 # 旧版本的配置

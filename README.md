@@ -100,7 +100,7 @@ lerna create demo1
 至此一个工程的骨架构建完成。
 
 
-### babel 安装
+### 2. babel 安装
 
 需要安装必须的依赖包，如下：
 ```bash
@@ -117,7 +117,7 @@ module.exports = {
 >注意：如果只想将依赖包安装到 demo1 ，带上参数 -w demo1，作用是将依赖包安装到指定的 demo1 。
 
 
-### typescript 安装
+### 3. typescript 安装
 
 ```bash
 npm i --save-dev typescript@5.2.2
@@ -196,7 +196,7 @@ npm i --save-dev typescript@5.2.2
 ```
 
 
-### webpack 安装
+### 4. webpack 安装
 
 ```bash
 npm i --save-dev webpack@5.88.2 webpack-cli@5.1.4 webpack-dev-server@4.15.1
@@ -254,7 +254,7 @@ module.exports = {
 };
 ```
 
-### react 安装
+### 5. react 安装
 
 ```bash
 npm i react@18.2.0 react-dom@18.2.0
@@ -266,7 +266,7 @@ npm i --save-dev @types/react@18.2.23 @types/react-dom@18.2.8
 > 因为 typescript 编译后不存在，所以所有 typescript 相关的依赖包只设置在开发依赖项。
 
 
-### prettier 安装
+### 6. prettier 安装
 
 这是一个代码格式化工具，在 vscode 插件中搜索 ```Prettier - Code formatter``` 使编辑器支持 prettier 。
 
@@ -305,7 +305,7 @@ module.exports = {
 
 > 注意：插件是使编辑器具备安装的格式化插件的格式化能力（编写代码时使用），npm 安装是使工程自身具备格式化能力（能以脚本命令的方式格式化代码或更多高级功能）。
 
-### eslint 安装
+### 7. eslint 安装
 
 代码静态分析工具，帮助开发者提前发现代码规范、错误等问题。提供了 vscode 插件，搜索 ```ESLint``` 。
 
@@ -369,7 +369,7 @@ dist/
 > 注意：插件是使编辑器具备 eslint 能力（编写代码时使用），npm 安装是使工程自身具备 eslint 能力（能以脚本命令的方式校验代码或更多高级功能）。
 
 
-### vscode 工作区配置
+### 8. vscode 工作区配置
 
 新建工作区配置文件 ```.vscode/settings.json``` ，参考配置如下：
 ```json
@@ -407,7 +407,7 @@ dist/
 ![](./assets/eslint-eol-fix.png)
 
 
-### 本地服务启动脚本配置
+### 9. 本地服务启动脚本配置
 
 这里的启动服务指的是启动 ```demo1``` 以显示页面。
 
@@ -431,7 +431,7 @@ dist/
 }
 ```
 
-### 开始创建你的第一个 APP
+### 10. 开始创建你的第一个 APP
 
 1. 新建 ```./packages/demo1/public/index.html``` 文件
 
@@ -464,10 +464,14 @@ react 将用这个 html 文件渲染内容。
 2. 新建一个组件文件 ```./packages/demo1/components/MyComponent.tsx```
 
 ```js
-import React from "react"
+import React from 'react'
 
-function MyComp(){
-  return (<div><span>恭喜你完成了一个了不起的成就——捕获了这只“怪物”！</span></div>)
+function MyComp() {
+  return (
+    <div>
+      <span>恭喜你完成了一个了不起的成就——捕获了这只“怪物”！</span>
+    </div>
+  )
 }
 
 export default MyComp

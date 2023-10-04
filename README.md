@@ -20,7 +20,7 @@
 
 如果你想执行此工程，执行以下步骤：
 ```bash
-git clone https://github.com/yakkomajuri/react-scratch
+git clone https://github.com/tancyx/tancy-react-scratch.git
 cd react-scratch
 npm i
 npm run dev
@@ -41,7 +41,7 @@ npm run dev
 
 此步骤为可选项，如果你实际工作中不需要多包管理，则可以省略。
 
-> 跳过此步骤后，工程目录结构稍有不同，最主要的区别就是没有 packages ，切所有必要配置文件都将在根目录下。
+> 跳过此步骤后，工程目录结构稍有不同，最主要的区别就是没有 packages ，且所有必要配置文件都将在根目录下。
 
 #### lerna 初始化工程
 

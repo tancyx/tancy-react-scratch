@@ -21,7 +21,7 @@
 如果你想执行此工程，执行以下步骤：
 ```bash
 git clone https://github.com/tancyx/tancy-react-scratch.git
-cd react-scratch
+cd tancy-react-scratch
 npm i
 npm run dev
 ```
